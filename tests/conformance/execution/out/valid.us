@@ -1,0 +1,9 @@
+fonksiyon böl(a: tamsayı, b: tamsayı, çıktı kalan: tamsayı): tamsayı
+{
+    kalan = a % b
+    => a / b
+}
+kalan: tamsayı
+sonuç: tamsayı = böl(10, 3, çıktı kalan)
+syaz "{sonuç}"
+syaz "{kalan}"

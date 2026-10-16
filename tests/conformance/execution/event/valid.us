@@ -1,0 +1,16 @@
+sınıf Kutu
+{
+    genel olay değişti: metin
+    genel fonksiyon bir(değer: metin)
+    {
+        syaz "1"
+    }
+    genel fonksiyon iki(değer: metin)
+    {
+        syaz "2"
+    }
+}
+kutu: Kutu = @Kutu()
+kutu.değişti += kutu.bir
+kutu.değişti += kutu.iki
+kutu.değişti.tetikle("a")

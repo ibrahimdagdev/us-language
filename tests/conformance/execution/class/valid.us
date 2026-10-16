@@ -1,0 +1,15 @@
+sınıf Sayaç
+{
+    değer: tamsayı
+    genel fonksiyon artır()
+    {
+        değer++
+    }
+    genel fonksiyon getir(): tamsayı
+    {
+        => değer
+    }
+}
+s: Sayaç = @Sayaç()
+s.artır()
+syaz "{s.getir()}"

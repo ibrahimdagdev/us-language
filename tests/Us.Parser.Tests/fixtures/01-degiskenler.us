@@ -1,0 +1,7 @@
+ad: metin = "İbrahim"
+yaş: tamsayı = 38
+telefon: metin? = ~
+ad, soyad, şehir: metin = "İbrahim", "Dağ", "İstanbul"
+yaş, sınıf: tamsayı
+sayı: tamsayı = 1
+sayı += 1

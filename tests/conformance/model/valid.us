@@ -1,0 +1,9 @@
+model Kullanıcı
+{
+    ad: metin
+}
+kullanıcı: Kullanıcı = @Kullanıcı
+{
+    ad = "İbrahim"
+}
+syaz kullanıcı.ad

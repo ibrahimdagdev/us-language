@@ -1,0 +1,42 @@
+afonksiyon kullanıcıGetir(id: tamsayı): Kullanıcı?
+{
+    => bekle veriGetir(id)
+}
+eşişlem
+{
+    kullanıcılar: liste<Kullanıcı> = bekle kullanıcılarıGetir()
+    ürünler: liste<Ürün> = bekle ürünleriGetir()
+}
+bekle 2.saniye
+dönüşüm Kullanıcı => KullanıcıDto
+{
+    id = ^.id
+    ad = ^.ad
+}
+alan Ticaret.Api : genel
+al Ticaret.Modeller olarak Modeller
+veritabanı UygulamaDb
+{
+    tablo kullanıcılar: Kullanıcı
+}
+servis KullanıcıServisi : kapsamlı
+{
+}
+bağla servis: KullanıcıServisi
+kontrolcü KullanıcıKontrolcü : "/kullanicilar"
+{
+    rota GET "/{id}"
+    afonksiyon bul(id: tamsayı): Kullanıcı?
+    {
+        => bekle servis.bul(id)
+    }
+}
+test "iki sayı doğru toplanır"
+{
+    sonuç: tamsayı = topla(2, 3)
+    beklenen sonuç == 5
+}
+işlem
+{
+    onayla
+}

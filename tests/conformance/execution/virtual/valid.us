@@ -1,0 +1,17 @@
+sınıf Hayvan
+{
+    genel sanal fonksiyon ses()
+    {
+        syaz "Hayvan"
+    }
+}
+sınıf Köpek : Hayvan
+{
+    genel yerinegeç fonksiyon ses()
+    {
+        temel.ses()
+        syaz "Köpek"
+    }
+}
+k: Köpek = @Köpek()
+k.ses()

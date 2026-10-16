@@ -1,0 +1,9 @@
+model Kullanıcı
+{
+    ad: metin
+    yaş: tamsayı
+}
+k: Kullanıcı = @Kullanıcı { ad = "İbrahim" yaş = 38 }
+okunan: Kullanıcı = json.oku<Kullanıcı>(json.yaz(k))
+syaz okunan.ad
+syaz "{okunan.yaş}"

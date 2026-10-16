@@ -1,0 +1,18 @@
+model Kullanıcı
+{
+    ad: metin
+    yaş: tamsayı
+    aktif: mantıksal
+    puan: tamsayı
+}
+
+kullanıcılar: liste<Kullanıcı> = [
+    @Kullanıcı { ad = "Ali" yaş = 20 aktif = doğru puan = 1 },
+    @Kullanıcı { ad = "Ayşe" yaş = 17 aktif = doğru puan = 9 },
+    @Kullanıcı { ad = "Mehmet" yaş = 35 aktif = yanlış puan = 4 },
+    @Kullanıcı { ad = "Can" yaş = 40 aktif = doğru puan = 8 }
+]
+
+sonuç: liste<Kullanıcı> = kullanıcılar.filtrele(^.aktif && ^.yaş >= 18).tsırala(^.puan).atla(0).sınırla(10)
+syaz "{sonuç.adet}"
+syaz sonuç[0].ad

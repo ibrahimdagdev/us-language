@@ -1,0 +1,40 @@
+model Kullanıcı
+{
+    id: tamsayı : anahtar
+    ad: metin
+}
+
+servis KullanıcıServisi : tekil
+{
+    genel kayıtlar: liste<Kullanıcı> = []
+
+    genel afonksiyon bul(id: tamsayı): Kullanıcı?
+    {
+        => bu.kayıtlar.filtrele(^.id == id).ilkYadaBoş()
+    }
+
+    genel afonksiyon ekle(kullanıcı: Kullanıcı): Kullanıcı
+    {
+        sonraki: tamsayı = bu.kayıtlar.adet + 1
+        kullanıcı.id = sonraki
+        bu.kayıtlar.ekle(kullanıcı)
+        => kullanıcı
+    }
+}
+
+kontrolcü KullanıcıKontrolcü : "/kullanicilar"
+{
+    bağla servis: KullanıcıServisi
+
+    rota GET "/{id}"
+    afonksiyon bul(id: tamsayı): Kullanıcı?
+    {
+        => bekle servis.bul(id)
+    }
+
+    rota POST "/"
+    afonksiyon ekle(kullanıcı: Kullanıcı): Kullanıcı
+    {
+        => bekle servis.ekle(kullanıcı)
+    }
+}

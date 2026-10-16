@@ -1,0 +1,7 @@
+fonksiyon artır(ref sayı: tamsayı)
+{
+    sayı++
+}
+değer: tamsayı = 10
+artır(ref değer)
+syaz "{değer}"

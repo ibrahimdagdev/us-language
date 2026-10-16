@@ -1,0 +1,9 @@
+arayüz IKutu
+{
+    fonksiyon n(): tamsayı
+}
+sınıf Kutu : IKutu
+{
+    genel fonksiyon n(): tamsayı => 1
+}
+bağla servis: IKutu

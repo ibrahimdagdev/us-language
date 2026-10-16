@@ -1,0 +1,18 @@
+afonksiyon bir(): tamsayı
+{
+    bekle 0.milisaniye
+    => 4
+}
+afonksiyon iki(): tamsayı
+{
+    bekle 0.milisaniye
+    => 6
+}
+a: tamsayı = 0
+b: tamsayı = 0
+eşişlem
+{
+    a = bekle bir()
+    b = bekle iki()
+}
+syaz "{a + b}"

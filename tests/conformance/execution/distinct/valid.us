@@ -1,0 +1,4 @@
+sayılar: liste<tamsayı> = [1, 1, 2]
+tek: liste<tamsayı> = sayılar.benzersiz()
+syaz "{tek.adet}"
+syaz "{tek[0]}"

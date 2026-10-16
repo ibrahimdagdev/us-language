@@ -1,0 +1,3 @@
+ad: metin? = ~
+göster: metin = ad ?? "Misafir"
+syaz göster

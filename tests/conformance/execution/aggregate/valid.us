@@ -1,0 +1,5 @@
+sayılar: liste<tamsayı> = [1, 2, 3]
+syaz "{sayılar.ortalama()}"
+syaz "{sayılar.toplam()}"
+syaz "{sayılar.min()}"
+syaz "{sayılar.maks()}"

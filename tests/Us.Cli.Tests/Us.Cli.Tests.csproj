@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+    <PackageReference Include="xunit" />
+    <PackageReference Include="xunit.runner.visualstudio" />
+  </ItemGroup>
+  <ItemGroup>
+    <Using Include="Xunit" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Us.Cli\Us.Cli.csproj" />
+  </ItemGroup>
+
+  <!-- Referenced Exe projects may still stage AssemblyName.exe; prefer public us.exe. -->
+  <Target Name="CopyUsAppHostToTestOutput" AfterTargets="Build">
+    <PropertyGroup>
+      <_UsHostCandidate>$(MSBuildThisFileDirectory)..\..\src\Us.Cli\bin\$(Configuration)\net10.0\us.exe</_UsHostCandidate>
+      <_LegacyHost>$(TargetDir)Us.Cli.exe</_LegacyHost>
+    </PropertyGroup>
+    <Copy SourceFiles="$(_UsHostCandidate)" DestinationFolder="$(TargetDir)" SkipUnchangedFiles="true" Condition="Exists('$(_UsHostCandidate)')" />
+    <Delete Files="$(_LegacyHost)" Condition="Exists('$(_LegacyHost)')" />
+  </Target>
+</Project>
+

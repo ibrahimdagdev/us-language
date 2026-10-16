@@ -1,0 +1,53 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "US",
+  "scopeName": "source.us",
+  "patterns": [
+    {
+      "include": "#comments"
+    },
+    {
+      "include": "#strings"
+    },
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#numbers"
+    }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.line.double-slash.us",
+          "match": "//.*$"
+        },
+        {
+          "name": "comment.block.us",
+          "begin": "/\\*",
+          "end": "\\*/"
+        }
+      ]
+    },
+    "strings": {
+      "name": "string.quoted.double.us",
+      "begin": "\u0022",
+      "end": "\u0022",
+      "patterns": [
+        {
+          "name": "constant.character.escape.us",
+          "match": "\\\\."
+        }
+      ]
+    },
+    "keywords": {
+      "name": "keyword.control.us",
+      "match": "\\b(e\u011Fer|ede\u011Filse|de\u011Filse|d\u00F6n|ile|ad\u0131m|tekrarla|yap|sonsuzd\u00F6n|\u00E7\u0131k|devam|fonksiyon|afonksiyon|bekle|model|s\u0131n\u0131f|olu\u015Ftur|bu|temel|genel|\u00F6zel|korumal\u0131|dahili|aray\u00FCz|soyut|statik|sanal|yerinege\u00E7|m\u00FCh\u00FCrl\u00FC|alan|al|olarak|se\u00E7|se\u00E7enek|ref|\u00E7\u0131kt\u0131|dene|yakala|sonunda|f\u0131rlat|ba\u015F\u0131nda|olay|e\u015Fi\u015Flem|do\u011Fru|yanl\u0131\u015F|do\u011Frula|kural|d\u00F6n\u00FC\u015F\u00FCm|ba\u011Fla|servis|kapsaml\u0131|tekil|ge\u00E7ici|kontrolc\u00FC|rota|test|beklenen|i\u015Flem|onayla|gerial|veritaban\u0131|tablo|birlikte)\\b"
+    },
+    "numbers": {
+      "name": "constant.numeric.us",
+      "match": "\\b\\d\u002B(\\.\\d\u002B)?\\b"
+    }
+  }
+}

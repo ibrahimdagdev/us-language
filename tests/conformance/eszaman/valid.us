@@ -1,0 +1,6 @@
+afonksiyon bekleVeYaz()
+{
+    bekle 0.milisaniye
+    syaz "Tamam"
+}
+bekle bekleVeYaz()

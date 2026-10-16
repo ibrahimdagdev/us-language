@@ -1,0 +1,12 @@
+sayaç: tamsayı = 0
+
+test "bir"
+{
+    sayaç = 1
+    beklenen sayaç == 1
+}
+
+test "iki"
+{
+    beklenen sayaç == 0
+}

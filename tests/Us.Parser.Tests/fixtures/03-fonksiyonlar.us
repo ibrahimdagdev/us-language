@@ -1,0 +1,15 @@
+fonksiyon topla(a: tamsayı, b: tamsayı): tamsayı
+{
+    => a + b
+}
+fonksiyon kare(x: tamsayı): tamsayı => x * x
+fonksiyon selamla(ad: metin)
+{
+    syaz ad
+}
+fonksiyon böl(a: tamsayı, b: tamsayı, çıktı kalan: tamsayı)
+{
+}
+fonksiyon kimlik<T: Varlık, Kaydedilebilir>(değer: T): T => değer
+çarpım: tamsayı = (x: tamsayı) => x * 2
+artır(ref sayı)

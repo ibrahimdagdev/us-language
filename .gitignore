@@ -1,0 +1,53 @@
+# Build
+**/bin/
+**/obj/
+artifacts/
+artifacts/**
+TestResults/
+*.pdb
+*.cache
+
+# IDE
+.vs/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Local VS Code workspace settings (keep editors/vscode extension source)
+.vscode/
+
+# Temp / generated US project outputs
+temp/
+tmp/
+cikti/
+yayin/
+
+# Node / VS Code extension build (extension source remains tracked)
+node_modules/
+editors/vscode/node_modules/
+editors/vscode/dist/
+*.vsix
+
+# Secrets / local env
+.env
+.env.*
+*.local
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Release verification artifacts
+*.zip
+US-v0.1.0-win-x64.zip
+
+# Internal development (local only; not published)
+tasks/
+docs/architecture.md
+docs/compiler-pipeline.md
+docs/runtime-design.md
+docs/roadmap.md
+docs/design-decisions/

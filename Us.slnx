@@ -1,0 +1,27 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Us.Cli/Us.Cli.csproj" />
+    <Project Path="src/Us.Compiler/Us.Compiler.csproj" />
+    <Project Path="src/Us.Core/Us.Core.csproj" />
+    <Project Path="src/Us.Data.SqlServer/Us.Data.SqlServer.csproj" />
+    <Project Path="src/Us.Hosting/Us.Hosting.csproj" />
+    <Project Path="src/Us.Interpreter/Us.Interpreter.csproj" />
+    <Project Path="src/Us.Lexer/Us.Lexer.csproj" />
+    <Project Path="src/Us.Parser/Us.Parser.csproj" />
+    <Project Path="src/Us.Runtime/Us.Runtime.csproj" />
+    <Project Path="src/Us.Semantics/Us.Semantics.csproj" />
+    <Project Path="src/Us.Tooling/Us.Tooling.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Us.Cli.Tests/Us.Cli.Tests.csproj" />
+    <Project Path="tests/Us.Compiler.Tests/Us.Compiler.Tests.csproj" />
+    <Project Path="tests/Us.Conformance.Tests/Us.Conformance.Tests.csproj" />
+    <Project Path="tests/Us.Core.Tests/Us.Core.Tests.csproj" />
+    <Project Path="tests/Us.Interpreter.Tests/Us.Interpreter.Tests.csproj" />
+    <Project Path="tests/Us.Lexer.Tests/Us.Lexer.Tests.csproj" />
+    <Project Path="tests/Us.Parser.Tests/Us.Parser.Tests.csproj" />
+    <Project Path="tests/Us.Runtime.Tests/Us.Runtime.Tests.csproj" />
+    <Project Path="tests/Us.Semantics.Tests/Us.Semantics.Tests.csproj" />
+    <Project Path="tests/Us.Tooling.Tests/Us.Tooling.Tests.csproj" />
+  </Folder>
+</Solution>

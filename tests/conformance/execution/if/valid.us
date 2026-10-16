@@ -1,0 +1,9 @@
+yaş: tamsayı = 38
+eğer yaş >= 18
+{
+    syaz "Yetişkin"
+}
+değilse
+{
+    syaz "Çocuk"
+}

@@ -1,0 +1,6 @@
+model Kutu
+{
+    ad: metin?
+}
+k: Kutu = json.oku<Kutu>("{{ \"ad\": null }}")
+syaz "bitti"

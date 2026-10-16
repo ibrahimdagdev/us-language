@@ -1,0 +1,12 @@
+sınıf Hayvan
+{
+    genel fonksiyon tür(): metin
+    {
+        => "Hayvan"
+    }
+}
+sınıf Köpek : Hayvan
+{
+}
+k: Köpek = @Köpek()
+syaz k.tür()

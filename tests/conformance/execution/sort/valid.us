@@ -1,0 +1,5 @@
+adlar: liste<metin> = ["Ayşe", "Ali"]
+artan: liste<metin> = adlar.sırala()
+azalan: liste<metin> = adlar.tsırala()
+syaz artan[0]
+syaz azalan[0]

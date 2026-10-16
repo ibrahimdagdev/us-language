@@ -1,0 +1,18 @@
+model Kullanıcı
+{
+    id: tamsayı : anahtar
+    ad, soyad: metin
+    eposta: metin : zorunlu, uzunluk(100)
+    yaş: tamsayı : aralık(18, 120)
+    aktif: mantıksal : varsayılan(doğru)
+}
+kullanıcı: Kullanıcı = @Kullanıcı
+{
+    ad = "İbrahim"
+    yaş = 38
+}
+güncel: Kullanıcı = kullanıcı ile
+{
+    ad = "Ahmet"
+    aktif = yanlış
+}

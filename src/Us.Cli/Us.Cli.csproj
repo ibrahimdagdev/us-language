@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\Us.Core\Us.Core.csproj" />
+    <ProjectReference Include="..\Us.Compiler\Us.Compiler.csproj" />
+    <ProjectReference Include="..\Us.Data.SqlServer\Us.Data.SqlServer.csproj" />
+    <ProjectReference Include="..\Us.Interpreter\Us.Interpreter.csproj" />
+    <ProjectReference Include="..\Us.Tooling\Us.Tooling.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <!-- Managed assembly stays Us.Cli.dll; public host is renamed to us.exe below. -->
+    <AssemblyName>Us.Cli</AssemblyName>
+    <RootNamespace>Us.Cli</RootNamespace>
+  </PropertyGroup>
+
+  <!--
+    CreateAppHost embeds AppBinaryName=$(AssemblyName).dll (Us.Cli.dll).
+    Renaming only the native apphost to us.exe does not break DLL resolution.
+  -->
+  <Target Name="RenameUsCliAppHost" AfterTargets="CopyFilesToOutputDirectory">
+    <PropertyGroup>
+      <_UsCliHostExe>$([System.IO.Path]::GetFullPath('$(OutDir)Us.Cli$(_NativeExecutableExtension)'))</_UsCliHostExe>
+      <_UsHostExe>$([System.IO.Path]::GetFullPath('$(OutDir)us$(_NativeExecutableExtension)'))</_UsHostExe>
+    </PropertyGroup>
+    <Move SourceFiles="$(_UsCliHostExe)" DestinationFiles="$(_UsHostExe)" Condition="Exists('$(_UsCliHostExe)')" />
+  </Target>
+
+  <Target Name="RenameUsCliAppHostOnPublish" AfterTargets="Publish">
+    <PropertyGroup>
+      <_UsCliPublishExe>$([System.IO.Path]::GetFullPath('$(PublishDir)Us.Cli$(_NativeExecutableExtension)'))</_UsCliPublishExe>
+      <_UsPublishExe>$([System.IO.Path]::GetFullPath('$(PublishDir)us$(_NativeExecutableExtension)'))</_UsPublishExe>
+    </PropertyGroup>
+    <Move SourceFiles="$(_UsCliPublishExe)" DestinationFiles="$(_UsPublishExe)" Condition="Exists('$(_UsCliPublishExe)')" />
+  </Target>
+
+</Project>

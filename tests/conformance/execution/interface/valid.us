@@ -1,0 +1,13 @@
+arayüz Uçabilir
+{
+    fonksiyon uç()
+}
+sınıf Kuş : Uçabilir
+{
+    genel fonksiyon uç()
+    {
+        syaz "Uçuyor"
+    }
+}
+u: Uçabilir = @Kuş()
+u.uç()

@@ -1,0 +1,11 @@
+afonksiyon getir(): tamsayı
+{
+    bekle 0.milisaniye
+    => 7
+}
+
+test "async"
+{
+    sonuç: tamsayı = bekle getir()
+    beklenen sonuç == 7
+}

@@ -1,0 +1,4 @@
+fonksiyon oku(yol: metin): metin
+{
+    => yol
+}

@@ -1,0 +1,15 @@
+model Kullanıcı
+{
+    ad: metin
+    yaş: tamsayı
+    aktif: mantıksal
+}
+
+kullanıcılar: liste<Kullanıcı> = [
+    @Kullanıcı { ad = "Ali" yaş = 20 aktif = doğru },
+    @Kullanıcı { ad = "Ayşe" yaş = 17 aktif = doğru },
+    @Kullanıcı { ad = "Mehmet" yaş = 35 aktif = yanlış }
+]
+
+aktifler: liste<Kullanıcı> = kullanıcılar.filtrele(^.aktif)
+syaz "{aktifler.adet}"

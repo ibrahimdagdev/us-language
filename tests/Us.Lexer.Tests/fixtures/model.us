@@ -1,0 +1,4 @@
+model Kullanıcı
+{
+    ad: metin
+}

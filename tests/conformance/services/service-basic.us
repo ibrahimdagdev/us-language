@@ -1,0 +1,6 @@
+servis Kutu : kapsamlı
+{
+    genel fonksiyon ad(): metin => "tamam"
+}
+bağla servis: Kutu
+syaz "{servis.ad()}"

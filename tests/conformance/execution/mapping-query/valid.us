@@ -1,0 +1,23 @@
+model Kullanıcı
+{
+    ad: metin
+}
+
+model Dto
+{
+    ad: metin
+    n: tamsayı
+}
+
+sayılar: liste<tamsayı> = [1]
+
+dönüşüm Kullanıcı => Dto
+{
+    n = sayılar.filtrele(^ == 1).adet
+    ad = ^.ad
+}
+
+kullanıcı: Kullanıcı = @Kullanıcı { ad = "İbrahim" }
+dto: Dto = kullanıcı.dönüştür<Dto>()
+syaz dto.ad
+syaz "{dto.n}"

@@ -1,0 +1,5 @@
+isimler: liste<metin> = ["Ali", "Ayşe", "Mehmet"]
+sayılar: liste<tamsayı> = []
+gruplar: liste<liste<metin>> = []
+seçili: liste<Kullanıcı?> = []
+ilk: metin = isimler[0]

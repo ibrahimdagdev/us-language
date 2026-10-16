@@ -1,0 +1,30 @@
+yaş: tamsayı = 38
+eğer yaş >= 18
+{
+    syaz "Yetişkin"
+}
+edeğilse yaş >= 13
+{
+    syaz "Genç"
+}
+değilse
+{
+    syaz "Çocuk"
+}
+dön 1 ile 10 -> i
+{
+}
+tekrarla yaş < 40
+{
+    yaş = yaş + 1
+}
+yap
+{
+    yaş++
+}
+tekrarla yaş < 40
+sonsuzdön
+{
+    çık
+    devam
+}

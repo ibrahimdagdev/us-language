@@ -1,0 +1,6 @@
+afonksiyon değerGetir(): tamsayı
+{
+    => 42
+}
+sonuç: tamsayı = bekle değerGetir()
+syaz "{sonuç}"

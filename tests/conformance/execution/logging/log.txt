@@ -1,0 +1,5 @@
+iz a
+bilgi b
+uyarı c
+hata d
+kritik e

@@ -1,0 +1,6 @@
+toplam: tamsayı = 0
+dön 1 ile 5 -> i
+{
+    toplam += i
+}
+syaz "{toplam}"

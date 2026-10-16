@@ -1,0 +1,7 @@
+klasör.oluştur("kutu")
+dosya.yaz("kutu/b.txt", "2")
+dosya.yaz("kutu/a.txt", "1")
+dön klasör.dosyalar("kutu") -> ad
+{
+    syaz ad
+}

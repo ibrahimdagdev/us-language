@@ -1,0 +1,19 @@
+model Kullanıcı
+{
+    ad: metin
+    yaş: tamsayı
+}
+
+model KullanıcıDto
+{
+    ad: metin
+}
+
+dönüşüm Kullanıcı => KullanıcıDto
+{
+    ad = ^.ad
+}
+
+kullanıcı: Kullanıcı = @Kullanıcı { ad = "İbrahim" yaş = 38 }
+dto: KullanıcıDto = kullanıcı.dönüştür<KullanıcıDto>()
+syaz dto.ad

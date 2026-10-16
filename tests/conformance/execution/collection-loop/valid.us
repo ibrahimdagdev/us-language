@@ -1,0 +1,7 @@
+sayılar: liste<tamsayı> = [10, 20, 30]
+toplam: tamsayı = 0
+dön sayılar -> sayı
+{
+    toplam += sayı
+}
+syaz "{toplam}"

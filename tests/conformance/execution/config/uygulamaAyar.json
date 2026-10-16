@@ -1,0 +1,6 @@
+{
+  "MongoDb": {
+    "sunucu": "localhost",
+    "port": 27017
+  }
+}

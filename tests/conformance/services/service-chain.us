@@ -1,0 +1,17 @@
+servis C : geçici
+{
+    genel n: tamsayı
+    oluştur() { n = 3 }
+}
+servis B : geçici
+{
+    genel c: C
+    oluştur(bağımlı: C) { c = bağımlı }
+}
+servis A : geçici
+{
+    genel b: B
+    oluştur(bağımlı: B) { b = bağımlı }
+}
+bağla servis: A
+syaz "{servis.b.c.n}"

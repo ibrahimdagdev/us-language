@@ -1,0 +1,12 @@
+model Kullanıcı
+{
+    ad: metin
+    yaş: tamsayı
+}
+kullanıcı: Kullanıcı = @Kullanıcı
+{
+    ad = "İbrahim"
+    yaş = 38
+}
+syaz kullanıcı.ad
+syaz "{kullanıcı.yaş}"

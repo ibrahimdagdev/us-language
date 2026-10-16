@@ -1,0 +1,11 @@
+model Sonuç<T>
+{
+    başarılı: mantıksal
+    veri: T?
+}
+s: Sonuç<metin> = @Sonuç<metin>
+{
+    başarılı = doğru
+    veri = "Tamam"
+}
+syaz "{s.veri}"

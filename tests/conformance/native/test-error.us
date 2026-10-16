@@ -1,0 +1,4 @@
+test "bölme"
+{
+    x: tamsayı = 1 / 0
+}

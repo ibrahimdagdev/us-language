@@ -1,0 +1,5 @@
+fonksiyon tek(x: tamsayı): tamsayı
+{
+    => x
+}
+sonuç: tamsayı = tek()

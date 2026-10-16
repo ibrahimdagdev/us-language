@@ -1,0 +1,13 @@
+Identifier
+Colon
+Identifier
+Equals
+Eger
+Identifier
+GreaterEqual
+IntegerLiteral
+EqualsGreater
+StringLiteral
+BangEqualsGreater
+StringLiteral
+EndOfFile

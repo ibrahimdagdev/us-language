@@ -1,0 +1,7 @@
+sayaç: tamsayı = 0
+servis Kutu : tekil
+{
+    oluştur() { sayaç = 1 }
+}
+bağla servis: Kutu
+syaz "{sayaç}"

@@ -1,0 +1,27 @@
+fonksiyon çalış()
+{
+    _başında
+    {
+        fırlat @Hata("hazır")
+    }
+    dene
+    {
+        syaz "dene"
+    }
+    yakala hata
+    {
+        syaz "yakala"
+    }
+    sonunda
+    {
+        syaz "son"
+    }
+}
+dene
+{
+    çalış()
+}
+yakala hata
+{
+    syaz hata.mesaj
+}

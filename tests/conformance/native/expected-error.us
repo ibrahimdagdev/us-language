@@ -1,0 +1,7 @@
+test "hata"
+{
+    beklenenHata
+    {
+        fırlat @Hata("hata")
+    }
+}

@@ -1,0 +1,18 @@
+model Kullanıcı
+{
+    id: tamsayı : anahtar
+    ad: metin
+    aktif: mantıksal
+}
+veritabanı UygulamaDb
+{
+    tablo kullanıcılar: Kullanıcı
+}
+bağla db: UygulamaDb
+işlem
+{
+    bekle db.kullanıcılar.ekle(@Kullanıcı { ad = "Ali" aktif = doğru })
+    gerial
+}
+satırlar: liste<Kullanıcı> = bekle db.kullanıcılar.tümü()
+syaz "{satırlar.adet}"

@@ -1,0 +1,7 @@
+gruplar: liste<liste<tamsayı>> = [[1, 2], [3]]
+eşleşen: liste<liste<tamsayı>> = gruplar.filtrele((dış: liste<tamsayı>) => dış.filtrele(^ == 1).adet == 1)
+syaz "{eşleşen.adet}"
+sayılar: liste<tamsayı> = [1, 4]
+iç: liste<tamsayı> = [1]
+kalan: liste<tamsayı> = sayılar.filtrele(iç.filtrele(^ == 1).adet == 1 && ^ > 2)
+syaz "{kalan.ilk()}"

@@ -1,0 +1,8 @@
+dene
+{
+    fırlat @Hata("Bir hata")
+}
+yakala hata
+{
+    syaz "Yakalandı"
+}

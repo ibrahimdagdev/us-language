@@ -1,0 +1,20 @@
+deneSayacı: tamsayı = 0
+sayaç: tamsayı = 0
+başında
+{
+    fırlat @Hata("hazır")
+}
+dene
+{
+    deneSayacı = 1
+}
+yakala hata
+{
+    sayaç = 1
+}
+sonunda
+{
+    sayaç = sayaç + 1
+}
+syaz "{deneSayacı}"
+syaz "{sayaç}"

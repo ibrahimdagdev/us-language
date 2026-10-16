@@ -1,0 +1,4 @@
+test "geçer"
+{
+    beklenen 2 + 3 == 5
+}

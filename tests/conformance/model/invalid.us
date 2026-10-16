@@ -1,0 +1,5 @@
+model Kullanıcı
+{
+    ad: metin
+}
+k: Kullanıcı = @Kullanıcı { ad = "Ali" yaş = 1 }

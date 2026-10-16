@@ -1,0 +1,5 @@
+sayılar: liste<tamsayı> = [4, 5]
+syaz "{sayılar.ilk()}"
+boş: liste<tamsayı> = []
+k: tamsayı? = boş.ilkYadaBoş()
+syaz "{k}"

@@ -1,0 +1,8 @@
+model MongoDbAyar : Ayar("MongoDb")
+{
+    sunucu: metin
+    port: tamsayı
+}
+bağla ayar: MongoDbAyar
+bağla ayar: MongoDbAyar
+syaz "tamam"

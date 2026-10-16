@@ -1,0 +1,78 @@
+{
+  "name": "us-language",
+  "displayName": "US Programming Language",
+  "description": "Türkçe programlama dili US için VS Code desteği.",
+  "version": "0.2.0",
+  "publisher": "us-lang",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ibrahimdagdev/us-language.git"
+  },
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "license": "UNLICENSED",
+  "categories": [
+    "Programming Languages",
+    "Formatters",
+    "Linters"
+  ],
+  "activationEvents": [
+    "onLanguage:us"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "us",
+        "aliases": [
+          "US",
+          "us"
+        ],
+        "extensions": [
+          ".us"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "us",
+        "scopeName": "source.us",
+        "path": "./syntaxes/us.tmLanguage.json"
+      }
+    ],
+    "commands": [
+      {
+        "command": "us.restartLanguageServer",
+        "title": "US: Restart Language Server"
+      },
+      {
+        "command": "us.formatDocument",
+        "title": "US: Format Document"
+      }
+    ],
+    "configuration": {
+      "title": "US",
+      "properties": {
+        "us.executablePath": {
+          "type": "string",
+          "default": "",
+          "description": "US CLI executable path (us.exe). Empty = auto-discover LOCALAPPDATA\\US\\bin then PATH."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "compile": "node esbuild.config.js",
+    "package": "npm run compile && vsce package --no-dependencies --out ../../artifacts/vscode/us-language-0.2.0.vsix",
+    "lint": "node -e \"require('fs').accessSync('package.json')\""
+  },
+  "dependencies": {
+    "vscode-languageclient": "^9.0.1"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^3.3.2",
+    "esbuild": "^0.25.0"
+  }
+}

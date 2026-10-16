@@ -1,0 +1,2 @@
+durum: metin =
+    eğer yaş >= 18 => "Yetişkin" !=> "Çocuk"

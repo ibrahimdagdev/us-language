@@ -1,0 +1,4 @@
+ad: metin = "  İbrahim  "
+syaz ad.kırp()
+syaz "istanbul".büyük()
+syaz "I".küçük()

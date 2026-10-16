@@ -1,0 +1,9 @@
+servis A : geçici
+{
+    oluştur(b: B) { }
+}
+servis B : geçici
+{
+    oluştur(a: A) { }
+}
+bağla servis: A

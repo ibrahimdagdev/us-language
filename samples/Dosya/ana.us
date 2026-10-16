@@ -1,0 +1,2 @@
+dosya.yaz("not.txt", "İbrahim")
+syaz dosya.oku("not.txt")

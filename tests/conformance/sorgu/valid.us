@@ -1,0 +1,12 @@
+model Kullanıcı
+{
+    ad: metin
+    yaş: tamsayı
+}
+kullanıcılar: liste<Kullanıcı> = [
+    @Kullanıcı { ad = "Ali" yaş = 20 },
+    @Kullanıcı { ad = "Ayşe" yaş = 17 }
+]
+yetişkinler: liste<Kullanıcı> = kullanıcılar.filtrele(^.yaş >= 18)
+syaz "{yetişkinler.adet}"
+syaz yetişkinler[0].ad

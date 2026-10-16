@@ -1,0 +1,6 @@
+fonksiyon selamla(ad: metin, mesaj: metin = "Merhaba")
+{
+    syaz "{mesaj} {ad}"
+}
+selamla("İbrahim")
+selamla("İbrahim", "Selam")

@@ -1,0 +1,11 @@
+servis Kutu : geçici
+{
+    genel afonksiyon getir(): tamsayı
+    {
+        bekle 0.milisaniye
+        => 7
+    }
+}
+bağla servis: Kutu
+n: tamsayı = bekle servis.getir()
+syaz "{n}"

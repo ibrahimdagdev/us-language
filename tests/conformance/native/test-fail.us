@@ -1,0 +1,4 @@
+test "kalır"
+{
+    beklenen 1 == 2
+}

@@ -1,0 +1,15 @@
+model Kullanıcı
+{
+    id: tamsayı : anahtar
+    ad: metin
+    aktif: mantıksal
+}
+veritabanı UygulamaDb
+{
+    tablo kullanıcılar: Kullanıcı
+}
+bağla db: UygulamaDb
+bekle db.kullanıcılar.ekle(@Kullanıcı { ad = "Ali" aktif = doğru })
+bekle db.kullanıcılar.ekle(@Kullanıcı { ad = "Zeynep" aktif = yanlış })
+satırlar: liste<Kullanıcı> = bekle db.kullanıcılar.filtrele(^.aktif).sırala(^.ad).tümü()
+syaz "{satırlar.adet}"

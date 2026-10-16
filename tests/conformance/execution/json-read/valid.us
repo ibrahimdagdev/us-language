@@ -1,0 +1,8 @@
+model Kullanıcı
+{
+    ad: metin
+    yaş: tamsayı
+}
+k: Kullanıcı = json.oku<Kullanıcı>("{{ \"ad\": \"İbrahim\", \"yaş\": 38 }}")
+syaz k.ad
+syaz "{k.yaş}"

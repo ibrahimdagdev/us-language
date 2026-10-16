@@ -1,0 +1,7 @@
+fonksiyon topla(a: tamsayı, b: tamsayı): tamsayı
+{
+    => a + b
+}
+
+sonuç: tamsayı = topla(10, 20)
+syaz "{sonuç}"

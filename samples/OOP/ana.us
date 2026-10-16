@@ -1,0 +1,25 @@
+sınıf Hayvan
+{
+    korumalı ad: metin
+    genel fonksiyon adGetir(): metin
+    {
+        => ad
+    }
+}
+
+sınıf Köpek : Hayvan
+{
+    genel oluştur()
+    {
+        ad = "Köpek"
+    }
+
+    genel fonksiyon ses(): metin
+    {
+        => "hav"
+    }
+}
+
+k: Köpek = @Köpek()
+syaz k.ses()
+syaz k.adGetir()

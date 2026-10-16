@@ -1,0 +1,6 @@
+sonuç: liste<Kullanıcı> = db.kullanıcılar
+    .filtrele(^.aktif)
+    .sırala(^.ad)
+    .tümü()
+ad: metin = kullanıcı?.ad ?? "Misafir"
+bekleyiş: süre = 5.saniye

@@ -1,0 +1,13 @@
+seçenek SiparişDurumu
+{
+    Bekliyor
+    Onaylandı
+    İptal
+}
+seç siparişDurumu
+{
+    SiparişDurumu.Bekliyor => syaz "Bekliyor"
+    SiparişDurumu.Onaylandı => syaz "Onaylandı"
+    _ => syaz "Diğer"
+    _değer => syaz "Ad"
+}

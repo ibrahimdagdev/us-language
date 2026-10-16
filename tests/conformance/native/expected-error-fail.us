@@ -1,0 +1,7 @@
+test "yok"
+{
+    beklenenHata
+    {
+        x: tamsayı = 1
+    }
+}

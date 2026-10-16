@@ -1,0 +1,30 @@
+model Kullanıcı
+{
+    id: tamsayı : anahtar
+    ad: metin
+    yaş: tamsayı
+}
+
+veritabanı Db
+{
+    tablo kullanıcılar: Kullanıcı
+}
+
+bağla db: Db
+
+kontrolcü Api : "/kullanicilar"
+{
+    rota POST "/"
+    afonksiyon ekle(girdi: Kullanıcı): nesne
+    {
+        bekle db.kullanıcılar.ekle(girdi)
+        => oluşturuldu(girdi)
+    }
+
+    rota GET "/"
+    afonksiyon tumunuGetir(): nesne
+    {
+        satırlar: liste<Kullanıcı> = bekle db.kullanıcılar.tümü()
+        => tamam(satırlar)
+    }
+}

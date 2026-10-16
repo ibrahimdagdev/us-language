@@ -1,0 +1,14 @@
+sınıf Kullanıcı
+{
+    ad: metin
+    genel oluştur(ad: metin)
+    {
+        bu.ad = ad
+    }
+    genel fonksiyon göster()
+    {
+        syaz bu.ad
+    }
+}
+k: Kullanıcı = @Kullanıcı("İbrahim")
+k.göster()

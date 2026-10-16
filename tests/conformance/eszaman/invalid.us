@@ -1,0 +1,4 @@
+fonksiyon senkron()
+{
+    bekle 0.milisaniye
+}

@@ -1,0 +1,8 @@
+Geçerli program: valid.us
+Geçersiz program: invalid.us
+Beklenen tanılar: diagnostics.txt
+Beklenen çıktı: output.txt
+
+Koşucu programı çalıştırmaz. Geçerli dosyada lexer, parser ve anlam hatası olmamalıdır.
+Geçersiz dosyanın diagnostics.txt satırları `KOD başlangıç uzunluk` biçimindedir.
+Kayıt yoksa sonuç başarıdır.

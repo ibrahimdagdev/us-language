@@ -1,0 +1,22 @@
+fonksiyon topla(a: tamsayı, b: tamsayı): tamsayı
+{
+    => a + b
+}
+
+afonksiyon hazır(): tamsayı
+{
+    bekle 0.milisaniye
+    => 1
+}
+
+test "iki sayı doğru toplanır"
+{
+    sonuç: tamsayı = topla(2, 3)
+    beklenen sonuç == 5
+}
+
+test "veri gelir"
+{
+    sonuç: tamsayı = bekle hazır()
+    beklenen sonuç == 1
+}

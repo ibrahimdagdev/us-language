@@ -1,0 +1,18 @@
+sınıf Hayvan
+{
+}
+sınıf Köpek : Hayvan
+{
+    genel oluştur(ad: metin)
+    {
+        bu.ad = ad
+    }
+}
+sınıf İnsan : Canlı, Yürüyebilir, Konuşabilir
+{
+}
+arayüz Uçabilir
+{
+    fonksiyon uç()
+}
+genel olay kullanıcıEklendi: Kullanıcı

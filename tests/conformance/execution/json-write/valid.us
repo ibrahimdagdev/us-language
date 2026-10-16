@@ -1,0 +1,7 @@
+model Kullanıcı
+{
+    ad: metin
+    yaş: tamsayı
+}
+k: Kullanıcı = @Kullanıcı { ad = "İbrahim" yaş = 38 }
+syaz json.yaz(k)

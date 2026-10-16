@@ -1,0 +1,4 @@
+kullanıcı: Kullanıcı = @Kullanıcı
+{
+    ad = "İbrahim"
+}

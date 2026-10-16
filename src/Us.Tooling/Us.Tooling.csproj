@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Us.Core\Us.Core.csproj" />
+    <ProjectReference Include="..\Us.Lexer\Us.Lexer.csproj" />
+    <ProjectReference Include="..\Us.Parser\Us.Parser.csproj" />
+    <ProjectReference Include="..\Us.Semantics\Us.Semantics.csproj" />
+  </ItemGroup>
+
+</Project>

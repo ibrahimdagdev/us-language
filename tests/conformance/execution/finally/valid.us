@@ -1,0 +1,12 @@
+fonksiyon x(): tamsayı
+{
+    dene
+    {
+        => 10
+    }
+    sonunda
+    {
+        syaz "temizle"
+    }
+}
+syaz "{x()}"

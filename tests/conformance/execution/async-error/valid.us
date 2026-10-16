@@ -1,0 +1,13 @@
+afonksiyon pat(): tamsayı
+{
+    fırlat @Hata("x")
+    => 0
+}
+dene
+{
+    bekle pat()
+}
+yakala hata
+{
+    syaz hata.mesaj
+}

@@ -1,0 +1,6 @@
+log.iz("a")
+log.bilgi("b")
+log.uyarı("c")
+log.hata("d")
+log.kritik("e")
+syaz "tamam"

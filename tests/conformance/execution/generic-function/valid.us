@@ -1,0 +1,8 @@
+fonksiyon kimlik<T>(değer: T): T
+{
+    => değer
+}
+ad: metin = kimlik("İbrahim")
+sayı: tamsayı = kimlik(10)
+syaz ad
+syaz "{sayı}"

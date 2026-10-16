@@ -1,0 +1,22 @@
+başında
+{
+}
+dene
+{
+}
+yakala hata
+{
+}
+sonunda
+{
+}
+_başında
+{
+}
+dene
+{
+}
+yakala hata: VeritabanıHatası
+{
+}
+fırlat @Hata("Hata")
